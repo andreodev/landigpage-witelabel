@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+ * {
+      font-family: "Plus Jakarta Sans", sans-serif;
+       scroll-behavior: smooth;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAFAFA !important;
 }
+
+/* marquee animation for language chips */
+@keyframes marquee-left {
+    0% { transform: translate3d(0,0,0); }
+    100% { transform: translate3d(-50%,0,0); }
+}
+
+.marquee {
+    display: flex;
+    width: 200%; /* two copies side-by-side */
+    animation: marquee-left 24s linear infinite;
+}
+
+.marquee-item-wrap {
+    display: flex;
+    gap: 0.5rem;
+    flex: 0 0 50%; /* each wrap occupies half of the marquee (so duplicated halves match) */
+    align-items: center;
+}
+
+/* prefer reduced motion users */
+@media (prefers-reduced-motion: reduce) {
+    .marquee { animation: none; }
+}
+
+/* mobile-specific marquee (shorter loop) */
+@keyframes marquee-left-mobile {
+    0% { transform: translate3d(0,0,0); }
+    100% { transform: translate3d(-50%,0,0); }
+}
+.marquee-mobile {
+    display: flex;
+    width: 200%;
+    animation: marquee-left-mobile 20s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-mobile { animation: none; }
+}
+
+/* three speeds for staggered rows */
+.marquee--fast { animation-duration: 28s; }
+.marquee--mid { animation-duration: 36s; }
+.marquee--slow { animation-duration: 44s; }
+
+/* mobile variants */
+.marquee-mobile--fast { animation-duration: 16s; }
+.marquee-mobile--mid { animation-duration: 22s; }
+.marquee-mobile--slow { animation-duration: 18s; }
+
+/* partners marquee */
+@keyframes partners-scroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+.partners-marquee {
+    display: flex;
+    width: 200%;
+    animation: partners-scroll 88s linear infinite;
+}
+.partners-track {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.partners-marquee:hover { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+    .partners-marquee { animation: none; }
+}
+
+/* when JS controls marquee, disable CSS animations to avoid conflicts */
+.js-marquee { animation: none !important; transform: translate3d(0,0,0); }

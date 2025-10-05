@@ -1,0 +1,31 @@
+{
+  "ui": {
+    "chipVariant": "soft",
+    "chipRadius": "xl",
+    "chipSize": "sm",
+    "showStatusDot": true,
+    "defaultActive": true
+  },
+  "currencies": [
+    { "code": "EUR", "label": "Euro", "country": "European Union", "symbol": "€", "flagEmoji": "🇪🇺", "flagUrl": "https://flagcdn.com/eu.svg", "active": true },
+    { "code": "CHF", "label": "Swiss Franc", "country": "Switzerland", "symbol": "CHF", "flagEmoji": "🇨🇭", "flagUrl": "https://flagcdn.com/ch.svg", "active": true },
+    { "code": "HUF", "label": "Hungarian Forint", "country": "Hungary", "symbol": "Ft", "flagEmoji": "🇭🇺", "flagUrl": "https://flagcdn.com/hu.svg", "active": true },
+    { "code": "JPY", "label": "Japanese Yen", "country": "Japan", "symbol": "¥", "flagEmoji": "🇯🇵", "flagUrl": "https://flagcdn.com/jp.svg", "active": true },
+    { "code": "AED", "label": "UAE Dirham", "country": "United Arab Emirates", "symbol": "د.إ", "flagEmoji": "🇦🇪", "flagUrl": "https://flagcdn.com/ae.svg", "active": true },
+    { "code": "USD", "label": "US Dollar", "country": "United States", "symbol": "$", "flagEmoji": "🇺🇸", "flagUrl": "https://flagcdn.com/us.svg", "active": true },
+    { "code": "NZD", "label": "New Zealand Dollar", "country": "New Zealand", "symbol": "$", "flagEmoji": "🇳🇿", "flagUrl": "https://flagcdn.com/nz.svg", "active": true },
+    { "code": "SEK", "label": "Swedish Krona", "country": "Sweden", "symbol": "kr", "flagEmoji": "🇸🇪", "flagUrl": "https://flagcdn.com/se.svg", "active": true },
+    { "code": "INR", "label": "Indian Rupee", "country": "India", "symbol": "₹", "flagEmoji": "🇮🇳", "flagUrl": "https://flagcdn.com/in.svg", "active": true },
+    { "code": "MXN", "label": "Mexican Peso", "country": "Mexico", "symbol": "$", "flagEmoji": "🇲🇽", "flagUrl": "https://flagcdn.com/mx.svg", "active": true },
+    { "code": "ILS", "label": "Israeli New Shekel", "country": "Israel", "symbol": "₪", "flagEmoji": "🇮🇱", "flagUrl": "https://flagcdn.com/il.svg", "active": true },
+    { "code": "BRL", "label": "Brazilian Real", "country": "Brazil", "symbol": "R$", "flagEmoji": "🇧🇷", "flagUrl": "https://flagcdn.com/br.svg", "active": true },
+    { "code": "ZAR", "label": "South African Rand", "country": "South Africa", "symbol": "R", "flagEmoji": "🇿🇦", "flagUrl": "https://flagcdn.com/za.svg", "active": true },
+    { "code": "KRW", "label": "South Korean Won", "country": "South Korea", "symbol": "₩", "flagEmoji": "🇰🇷", "flagUrl": "https://flagcdn.com/kr.svg", "active": true },
+    { "code": "SAR", "label": "Saudi Riyal", "country": "Saudi Arabia", "symbol": "ر.س", "flagEmoji": "🇸🇦", "flagUrl": "https://flagcdn.com/sa.svg", "active": true },
+    { "code": "HKD", "label": "Hong Kong Dollar", "country": "Hong Kong", "symbol": "$", "flagEmoji": "🇭🇰", "flagUrl": "https://flagcdn.com/hk.svg", "active": true },
+    { "code": "GBP", "label": "British Pound", "country": "United Kingdom", "symbol": "£", "flagEmoji": "🇬🇧", "flagUrl": "https://flagcdn.com/gb.svg", "active": true },
+    { "code": "CAD", "label": "Canadian Dollar", "country": "Canada", "symbol": "$", "flagEmoji": "🇨🇦", "flagUrl": "https://flagcdn.com/ca.svg", "active": true },
+    { "code": "NOK", "label": "Norwegian Krone", "country": "Norway", "symbol": "kr", "flagEmoji": "🇳🇴", "flagUrl": "https://flagcdn.com/no.svg", "active": true },
+    { "code": "PLN", "label": "Polish Złoty", "country": "Poland", "symbol": "zł", "flagEmoji": "🇵🇱", "flagUrl": "https://flagcdn.com/pl.svg", "active": true }
+  ]
+}
