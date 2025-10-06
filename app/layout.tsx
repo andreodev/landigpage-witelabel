@@ -4,9 +4,9 @@ import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "Wite Checkout",
+  title: "Witelabel - Soluções Personalizadas para Seu Negócio",
   icons: {
-    icon: "/icon-wite-checkout.svg",
+    icon: "/logo.svg",
   },
 };
 
