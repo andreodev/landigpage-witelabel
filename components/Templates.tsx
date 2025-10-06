@@ -3,8 +3,9 @@ import Image from "next/image";
 import template1 from "@/public/assets/template1.png";
 import template2 from "@/public/assets/template2.png";
 import template3 from "@/public/assets/template3.png";
+import template4 from "@/public/assets/template4.png";
 
-const templates = [template1, template2, template3];
+const templates = [template1, template2, template3, template4];
 
 import { useEffect, useRef } from "react";
 
