@@ -1,6 +1,5 @@
 
 import Image from 'next/image';
-import seta from '../public/assets/seta.png';
 import brasilBitcoin from '../public/assets/brasil-bitcoin.png';
 import meta from '../public/assets/meta.png';
 import gpay from '../public/assets/gpay.png';

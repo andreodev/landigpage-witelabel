@@ -2,7 +2,7 @@ import { LeftArrow } from "./Icons";
 
 export default function TheChoice() {
     return (
-        <section className="mx-auto max-w-7xl px-4 sm:px-6">
+        <section className="mx-auto mb-18 max-w-7xl px-4 sm:px-6">
             <div className="bg-gradient-to-r from-[#6D03F5] to-[#D74B18] rounded-xl p-6 md:p-9 flex flex-col sm:flex-row items-center sm:justify-between gap-6">
                 {/* Texto à esquerda */}
                 <div className="flex flex-col gap-2 text-white text-center sm:text-left">

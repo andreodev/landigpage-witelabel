@@ -26,6 +26,14 @@ export default function Navbar() {
                                 <li>
                                     <a
                                         className="hover:text-black transition-colors"
+                                        href="#templates"
+                                    >
+                                        Templates
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="hover:text-black transition-colors"
                                         href="#vantagens"
                                     >
                                         Vantagens
@@ -42,9 +50,17 @@ export default function Navbar() {
                                 <li>
                                     <a
                                         className="hover:text-black transition-colors"
-                                        href="#integracoes"
+                                        href="#primeiros-passos"
                                     >
-                                        Integrações
+                                        Primeiros passos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="hover:text-black transition-colors"
+                                        href="#aplicativo"
+                                    >
+                                        Aplicativo
                                     </a>
                                 </li>
                                 <li>
@@ -65,8 +81,8 @@ export default function Navbar() {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <a href="https://painel.witerecuperation.com/registro">
-                                    Criar conta
+                                <a href="#form">
+                                    Entrar em contato
                                 </a>
                             </motion.button>
                         </div>
@@ -113,47 +129,63 @@ export default function Navbar() {
                             <ul className="space-y-1 text-sm">
                                 <li>
                                     <a
-                                        className="block rounded-lg px-3 py-2 hover:bg-black/5"
-                                        href="#agente"
+                                        className="hover:text-black transition-colors"
+                                        href="#templates"
                                     >
-                                        Agente IA
+                                        Templates
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        className="block rounded-lg px-3 py-2 hover:bg-black/5"
-                                        href="#integracao"
+                                        className="hover:text-black transition-colors"
+                                        href="#vantagens"
                                     >
-                                        Integração WhatsApp
+                                        Vantagens
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        className="block rounded-lg px-3 py-2 hover:bg-black/5"
+                                        className="hover:text-black transition-colors"
+                                        href="#primeiros-passos"
+                                    >
+                                        Primeiros passos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="hover:text-black transition-colors"
+                                        href="#experiencia"
+                                    >
+                                        Experiência do usuário
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="hover:text-black transition-colors"
+                                        href="#aplicativo"
+                                    >
+                                        Aplicativo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="hover:text-black transition-colors"
                                         href="#perguntas"
                                     >
                                         Perguntas frequentes
                                     </a>
                                 </li>
+
                             </ul>
 
-                            <div className="mt-3 flex gap-2">
+                            <div className="flex mt-3 items-center gap-2 ">
                                 <motion.button
-                                    className="flex-1 border border-[#01AEA4] text-[#01AEA4] py-2 px-4 rounded-xl hover:bg-black/5 transition"
+                                    className="bg-[#6D03F5] cursor-pointer text-white py-2 px-10 rounded-4xl w-full hover:opacity-90 transition"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
-                                    <a href="https://painel.witerecuperation.com/login?callbackUrl=%2F">
-                                        Entrar
-                                    </a>
-                                </motion.button>
-                                <motion.button
-                                    className="flex-1 cursor-pointer bg-[#01AEA4] text-white py-2 px-4 rounded-xl hover:opacity-90 transition"
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <a href="https://painel.witerecuperation.com/registro">
-                                        Criar conta
+                                    <a href="#form">
+                                        Entrar em contato
                                     </a>
                                 </motion.button>
                             </div>

@@ -17,9 +17,22 @@ export default function Contact() {
         null
     );
 
-    const SERVICE_ID = 'service_q1tnqsk'
-    const TEMPLATE_ID = 'template_byvnkyc';
-    const PUBLIC_KEY = 'bPwOAioU1XVOpAYGh';
+    // Mover credenciais para variáveis de ambiente.
+    // Em Next.js, variáveis disponíveis no cliente devem começar com NEXT_PUBLIC_
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? 'service_5kfq4zy';
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? 'template_1xz8qqf';
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? 'bPwOAioU1XVOpAYGh';
+
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+        // Apenas aviso durante o desenvolvimento/build — não interrompe o fluxo.
+        if (typeof window !== 'undefined') {
+            // cliente
+            console.warn('EmailJS: variáveis de ambiente não configuradas. Verifique NEXT_PUBLIC_EMAILJS_*');
+        } else {
+            // servidor
+            console.warn('EmailJS: variáveis de ambiente não configuradas. Verifique NEXT_PUBLIC_EMAILJS_*');
+        }
+    }
 
     const router = useRouter();
 
@@ -34,7 +47,7 @@ export default function Contact() {
                 publicKey: PUBLIC_KEY,
             });
             formRef.current.reset();
-            router.push("/obrigado");
+            router.push("/success");
         } catch (err) {
             setResult({ ok: false, msg: "Falha ao enviar. Tente novamente." });
             console.error(err);
@@ -44,7 +57,7 @@ export default function Contact() {
     }
 
     return (
-        <section className=" bg-[#FAFAFA] my-[120px]  px-4 sm:px-6 lg:px-8">
+        <section className=" bg-[#FAFAFA] my-[120px]  px-4 sm:px-6 lg:px-8" id="form">
             <div className="mx-auto max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-start">
                     {/* ESQUERDA */}

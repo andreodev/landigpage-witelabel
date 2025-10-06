@@ -1,10 +1,13 @@
+"use client"
+
 import Image from "next/image";
 import imagem2 from "../public/assets/imagem2.png";
-import { HoldCode, ShieldGlobe, TradingGraph, UserChat } from "./Icons";
+import { HoldCode, LeftArrow, ShieldGlobe, TradingGraph, UserChat } from "./Icons";
+import { motion } from "framer-motion";
 
 export default function AboutProduct() {
     return (
-        <section className="bg-[#FAFAFA] text-black pb-[80px] sm:pb-[120px] px-4">
+        <section className="bg-[#FAFAFA] pb-[80px] sm:pb-[120px] px-4">
             <div
                 className="flex justify-center"
             >
@@ -17,10 +20,10 @@ export default function AboutProduct() {
                     <div
                         className="order-2 md:order-1 w-full"
                     >
-                        <h2 className="text-2xl sm:text-3xl lg:text-[64px] font-bold leading-tight">
+                        <h2 className="text-2xl sm:text-3xl lg:text-[64px] font-bold leading-tight text-[#52667E]">
                             API de fácil integração
                         </h2>
-                        <p className="mt-4 text-base sm:text-lg text-[#000000B2]">
+                        <p className="mt-4 text-base sm:text-lg text-[#52667E99]">
                             Integre a nossa API com a nossa documentação e conte com o suporte
                             ativo da nossa equipe técnica para auxiliar na integração.
                         </p>
@@ -30,7 +33,7 @@ export default function AboutProduct() {
                                 <div className="h-10 w-10 grid place-items-center bg-[#E3EAF780] rounded-lg">
                                     <HoldCode />
                                 </div>
-                                <span className="text-[#0A1519] font-medium text-base">
+                                <span className="text-[#52667E] font-medium text-base">
                                     Integração simplificada
                                 </span>
                             </div>
@@ -39,7 +42,7 @@ export default function AboutProduct() {
                                 <div className="h-10 w-10 grid place-items-center bg-[#E3EAF780] rounded-lg">
                                     <TradingGraph />
                                 </div>
-                                <span className="text-[#0A1519] font-medium text-base">
+                                <span className="text-[#52667E] font-medium text-base">
                                     Escalabilidade garantida
                                 </span>
                             </div>
@@ -48,7 +51,7 @@ export default function AboutProduct() {
                                 <div className="h-10 w-10 grid place-items-center bg-[#E3EAF780] rounded-lg">
                                     <UserChat />
                                 </div>
-                                <span className="text-[#0A1519] font-medium text-base">
+                                <span className="text-[#52667E] font-medium text-base">
                                     Suporte técnico especializado
                                 </span>
                             </div>
@@ -57,11 +60,23 @@ export default function AboutProduct() {
                                 <div className="h-10 w-10 grid place-items-center bg-[#E3EAF780] rounded-lg">
                                     <ShieldGlobe />
                                 </div>
-                                <span className="text-[#0A1519] font-medium text-base">
+                                <span className="text-[#52667E] font-medium text-base">
                                     Segurança e confiabilidade
                                 </span>
                             </div>
+
+
                         </div>
+
+                        <a href="#form" className="cursor-pointer">
+                            <motion.button className="mt-10 bg-[#D74B18] flex cursor-pointer items-center rounded-[20px]"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}>
+                                <p className="text-white font-medium text-base cursor-pointer ml-4">Fale com um especialista</p>
+
+                                <div className="bg-[#D74B18] cursor-pointer flex items-center px-6 sm:pr-8 rounded-[9000px] py-6"><LeftArrow /></div>
+                        </motion.button>
+                            </a>
                     </div>
 
                     <div

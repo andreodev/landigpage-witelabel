@@ -9,30 +9,30 @@ type Feature = {
 
 const FEATURES: Feature[] = [
     {
-        title: "Processamento rápido",
+        title: "Implantação Rápida",
         description:
-            "Velocidade de ponta no processamento de compras",
+            "Coloque sua operação no ar em poucos dias, sem burocracia ou processos demorados.",
         Icon: Flash,
     },
     {
-        title: "Recuperação de carrinho integrada",
+        title: "Integração com a Wite Recuperation",
         description:
-            "Recupere vendas não finalizadas com agentes de I.A integrados",
+            "Tenha nativamente a inteligência de recuperação de vendas, aumentando a sua receita.",
         Icon: ShoppingCard,
     },
     {
-        title: "Mais vendas, mais lucro",
+        title: "Controle total da receita",
         description:
-            "Aumente sua conversão no final do mês com a Wite Checkout!",
+            "Defina taxas e condições do seu jeito para maximizar ganhos.",
         Icon: WalletCheck,
     },
 ];
 
 export default function Integration() {
     return (
-        <section className="w-full bg-[#FAFAFA]" id="integracao">
+        <section className="w-full bg-[#FAFAFA] my-18 p-5 sm:p-0" id="integracao">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
-                <div className="grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-x-12 ">
+                <div className="grid grid-cols-1 items-center gap-y-12 md:grid-cols-3 md:gap-x-12 ">
                     {FEATURES.map(({ title, description, Icon }) => (
                         <article key={title} className="flex items-center gap-5 md:gap-6">
                             <div className="shrink-0">

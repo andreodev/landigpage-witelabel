@@ -29,6 +29,15 @@ body {
     align-items: center;
 }
 
+/* templates-specific track: each duplicated wrap occupies 100% width so images can use 90vw on mobile */
+.templates-item-wrap {
+    display: flex;
+    gap: 1rem;
+    flex: 0 0 100%; /* each copy takes full viewport width inside the 200% marquee */
+    align-items: center;
+    justify-content: center;
+}
+
 /* prefer reduced motion users */
 @media (prefers-reduced-motion: reduce) {
     .marquee { animation: none; }
@@ -42,7 +51,7 @@ body {
 .marquee-mobile {
     display: flex;
     width: 200%;
-    animation: marquee-left-mobile 20s linear infinite;
+    animation: marquee-left-mobile 10s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -51,13 +60,13 @@ body {
 
 /* three speeds for staggered rows */
 .marquee--fast { animation-duration: 28s; }
-.marquee--mid { animation-duration: 36s; }
+.marquee--mid { animation-duration: 16s; }
 .marquee--slow { animation-duration: 44s; }
 
 /* mobile variants */
 .marquee-mobile--fast { animation-duration: 16s; }
-.marquee-mobile--mid { animation-duration: 22s; }
-.marquee-mobile--slow { animation-duration: 18s; }
+.marquee-mobile--mid { animation-duration: 12s; }
+.marquee-mobile--slow { animation-duration: 8s; }
 
 /* partners marquee */
 @keyframes partners-scroll {
@@ -75,6 +84,10 @@ body {
     align-items: center;
 }
 .partners-marquee:hover { animation-play-state: paused; }
+
+/* utility: pausa animação quando hover (usado por componentes que aplicam hover:pause-animation) */
+.pause-animation:hover { animation-play-state: paused !important; }
+
 
 @media (prefers-reduced-motion: reduce) {
     .partners-marquee { animation: none; }
