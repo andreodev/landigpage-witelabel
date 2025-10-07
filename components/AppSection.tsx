@@ -14,7 +14,6 @@ export default function AppSection() {
                     <h2 className="text-[#52667E] text-4xl sm:text-6xl lg:text-[52px] font-semibold  leading-tight">
                         Tenha seu próprio aplicativo
                     </h2>
-                    <p className="text-[#152538]/60 text-base p-3 sm:text-2xl">Recuperação inteligente de vendas com I.A</p>
                 </div>
                 <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-[1fr_auto_1fr] items-center bg-gradient-to-l to-[#D74B18] from-[#6D03F5] sm:rounded-2xl sm:my-[40px] px-4 sm:px-6"
                     style={{
